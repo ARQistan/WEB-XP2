@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charm of Bali | Diversity & History</title>
+    <!-- Tailwind CSS for premium and precise styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #000; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333; 
+        }
+        .text-shadow {
+            text-shadow: 0 4px 10px rgba(0,0,0,0.8);
+        }
+        .bg-blur {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        /* Lock scrolling when game arrow keys are pressed */
+        .no-scroll {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-white selection:text-black">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 py-6 px-6 md:px-12 flex justify-between items-center bg-transparent">
+        <a href="#home" class="text-xl font-bold tracking-[0.3em] uppercase z-10">Charm of Bali</a>
+        <div class="hidden md:flex space-x-10 text-[10px] font-bold tracking-[0.2em] uppercase z-10 text-white/70">
+            <a href="#history" class="hover:text-white transition-colors">History & Culture</a>
+            <a href="#destinations" class="hover:text-white transition-colors">Destinations</a>
+            <a href="#products" class="hover:text-white transition-colors">Exclusives</a>
+        </div>
+        <button class="md:hidden z-10 text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" d="M4 8h16M4 16h16"></path></svg>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0 scale-105">
+            <source src="The Island of The Gods.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black z-0"></div>
+
+        <div class="relative z-10 text-center px-4 flex flex-col items-center">
+            <span class="text-white/70 tracking-[0.5em] uppercase text-[10px] mb-4 animate-pulse">Welcome to</span>
+            <h1 class="text-6xl md:text-9xl font-bold mb-6 text-shadow tracking-tight">Bali</h1>
+            <p class="text-lg md:text-xl font-light tracking-widest max-w-xl text-shadow italic text-white/80 font-serif">
+                "Where tradition meets eternity, and every corner tells a story of harmony."
+            </p>
+            <div class="mt-12 flex space-x-6">
+                <a href="#history" class="bg-white text-black px-10 py-4 uppercase tracking-widest text-[10px] font-bold hover:bg-gray-200 transition-all">Explore Culture</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Explanation Section (Historical/Research Tone) -->
+    <section id="history" class="bg-black py-32 px-6 md:px-12">
+        <div class="max-w-[1400px] mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 xl:gap-24">
+                
+                <!-- Left Column: Imagery -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div class="sticky top-32">
+                        <div class="overflow-hidden rounded-2xl border border-white/10 group shadow-2xl bg-[#111] min-h-[400px] flex items-center justify-center relative">
+                            <img src="gate vertical.jpeg" alt="Historical Balinese Gate" class="absolute w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000" onerror="this.src='https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=800&q=80'">
+                        </div>
+                        <div class="mt-8 p-8 border border-white/5 bg-white/[0.02] rounded-2xl">
+                            <h4 class="font-serif italic text-2xl mb-4 text-white/90">"Balinese architecture is a physical manifestation of ancient literature and the cosmology of the universe's order."</h4>
+                            <p class="text-xs text-white/40 tracking-widest uppercase">Historical Study of Civilization</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Deep Historical Narrative -->
+                <div class="lg:col-span-7 space-y-12">
+                    <header>
+                        <h2 class="text-4xl md:text-6xl font-bold leading-tight mb-6 italic">Traces of Civilization &<br>Cultural Evolution</h2>
+                        <div class="w-24 h-[1px] bg-white/30"></div>
+                    </header>
+
+                    <article class="prose prose-invert max-w-none text-white/70 space-y-10 leading-relaxed font-light text-lg">
+                        <section>
+                            <h3 class="text-white text-xl font-bold uppercase tracking-widest mb-4">Excavation of Historical Roots (8th Century AD)</h3>
+                            <p>
+                                Archaeological and philological studies indicate that the great civilization of Bali was not born overnight. The first written historical record of Bali is found in the <strong>Blanjong Inscription (914 AD)</strong> issued by Sri Kesari Warmadewa. This inscription, containing two languages (Sanskrit and Old Balinese), serves as empirical evidence of early monarchical systems and the influx of Mahayana Buddhism and Indian civilization into the archipelago, long before modern syncretism was formed.
+                            </p>
+                        </section>
+
+                        <section>
+                            <h3 class="text-white text-xl font-bold uppercase tracking-widest mb-4">Majapahit Hegemony & Acculturation (1343 AD)</h3>
+                            <p>
+                                The most radical cultural transition milestone in Bali occurred post the Gajah Mada expedition in 1343. The conquest by the Majapahit Empire triggered a wave of exodus of Hindu aristocrats, artists, and priests from Java to Bali. This historical event gave birth to the <strong>Agama Tirtha</strong> (Religion of Holy Water) sect which blended Siwa-Buddha doctrines with local Balinese animism rites (ancestor and nature spirit worship). The result is a highly complex, unique religious system that has withstood foreign ideological invasions up to the 21st century.
+                            </p>
+                        </section>
+
+                        <section>
+                            <h3 class="text-white text-xl font-bold uppercase tracking-widest mb-4">Subak: Ancient Socio-Agrarian Engineering</h3>
+                            <p>
+                                From a rural sociology perspective, the <strong>Subak</strong> organization is recognized by UNESCO as a masterpiece of an irrigation system based on the Tri Hita Karana philosophy. Anthropological research concludes that Subak is not a government administrative entity, but an autonomous religious hydrological entity. This system represents an early form of pure democracy where water flow is not regulated by caste status, but by ecological justice and communal decisions at the Ulun Danu Temple.
+                            </p>
+                        </section>
+
+                        <section>
+                            <h3 class="text-white text-xl font-bold uppercase tracking-widest mb-4">Social Stratification & The Menyama Braya Concept</h3>
+                            <p>
+                                Contrary to the rigid stigma of caste (Catur Varna) from India, Bali's social structure evolved to be more fluid and adaptive. Modern ethnographic findings highlight the concept of <strong>Menyama Braya</strong>—a local social contract that upholds universal tolerance. Historical evidence of this openness is engraved in the Islamic Villages of Kepaon and Pegayaman which have stood since the 16th century thanks to direct protection from the Balinese Kings, proving that Balinese identity is shaped by cultural accommodation, not isolation.
+                            </p>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinasi Wisata Section (Porsche Layout Style) -->
+    <section id="destinations" class="bg-[#050505] py-32 border-y border-white/5 overflow-hidden">
+        <div class="px-6 lg:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 max-w-[1400px] mx-auto">
+                <div class="max-w-2xl">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4">Selected Destinations.</h2>
+                    <p class="text-white/50 tracking-wide text-lg">Explore the exotic landscapes of the Island of the Gods' heritage.</p>
+                </div>
+            </div>
+
+            <!-- Horizontal Scrollable Grid / Porsche Style Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1400px] mx-auto">
+                
+                <a href="https://www.google.com/maps/search/?api=1&query=Kuta+Beach+Bali" target="_blank" class="group relative rounded-3xl overflow-hidden bg-[#111] aspect-[4/3] cursor-pointer block">
+                    <img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=800&q=80" alt="Kuta" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none"></div>
+                    <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
+                        <h3 class="text-xl font-bold text-white">Kuta Beach.</h3>
+                        <div class="w-10 h-10 rounded-full bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-colors duration-300">
+                            <svg class="w-4 h-4 transform -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Tegallalang+Rice+Terrace+Ubud+Bali" target="_blank" class="group relative rounded-3xl overflow-hidden bg-[#111] aspect-[4/3] cursor-pointer block">
+                    <img src="https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?w=800&q=80" alt="Ubud" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none"></div>
+                    <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
+                        <h3 class="text-xl font-bold text-white">Tegallalang Ubud.</h3>
+                        <div class="w-10 h-10 rounded-full bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-colors duration-300">
+                            <svg class="w-4 h-4 transform -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Mount+Batur+Bali" target="_blank" class="group relative rounded-3xl overflow-hidden bg-[#111] aspect-[4/3] cursor-pointer block">
+                    <img src="https://images.unsplash.com/photo-1573790387438-4da905039392?w=800&q=80" alt="Batur" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none"></div>
+                    <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
+                        <h3 class="text-xl font-bold text-white">Mount Batur.</h3>
+                        <div class="w-10 h-10 rounded-full bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-colors duration-300">
+                            <svg class="w-4 h-4 transform -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Tanah+Lot+Temple+Bali" target="_blank" class="group relative rounded-3xl overflow-hidden bg-[#111] aspect-[4/3] cursor-pointer block">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/TanahLot_2014.JPG" alt="Tanah Lot" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none"></div>
+                    <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
+                        <h3 class="text-xl font-bold text-white">Tanah Lot Temple.</h3>
+                        <div class="w-10 h-10 rounded-full bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-colors duration-300">
+                            <svg class="w-4 h-4 transform -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Nusa+Penida+Bali" target="_blank" class="group relative rounded-3xl overflow-hidden bg-[#111] aspect-[4/3] cursor-pointer block">
+                    <img src="https://images.unsplash.com/photo-1559628233-100c798642d4?w=800&q=80" alt="Nusa Penida" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none"></div>
+                    <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
+                        <h3 class="text-xl font-bold text-white">Nusa Penida.</h3>
+                        <div class="w-10 h-10 rounded-full bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-colors duration-300">
+                            <svg class="w-4 h-4 transform -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Ulun+Danu+Beratan+Temple+Bali" target="_blank" class="group relative rounded-3xl overflow-hidden bg-[#111] aspect-[4/3] cursor-pointer block">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80" alt="Danau Beratan" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none"></div>
+                    <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
+                        <h3 class="text-xl font-bold text-white">Ulun Danu Beratan.</h3>
+                        <div class="w-10 h-10 rounded-full bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-colors duration-300">
+                            <svg class="w-4 h-4 transform -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products" class="bg-black py-32 px-6">
+        <div class="max-w-[1400px] mx-auto">
+            <div class="mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Exclusive Collections & Artworks.</h2>
+                <p class="text-white/50 tracking-wide text-lg">Local cultural touches realized in premium formats.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="group relative bg-[#111] hover:bg-white rounded-[2rem] p-6 transition-all duration-700 cursor-pointer flex flex-col h-full overflow-hidden min-h-[400px]" onclick="togglePopup(this)">
+                    <div class="w-full max-h-[250px] md:max-h-[300px] group-hover:max-h-[1200px] transition-[max-height] duration-[1200ms] ease-in-out rounded-2xl overflow-hidden mb-6 bg-black flex items-center justify-center">
+                        <img src="mockup.jpeg" alt="Tote Bag" class="w-full h-auto flex-shrink-0 object-cover transform group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=800&q=80'">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-end">
+                       <div class="flex justify-between items-end text-white group-hover:text-black transition-colors duration-500">
+                           <div>
+                               <span class="text-xs tracking-widest uppercase text-gray-500 mb-1 block">Accessories</span>
+                               <h3 class="text-2xl font-bold font-serif italic">Dewata Culture Tote Bag.</h3>
+                           </div>
+                           <div class="w-10 h-10 rounded-full border border-current flex items-center justify-center transition-transform group-hover:translate-x-1">
+                               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                           </div>
+                       </div>
+                    </div>
+                    <!-- Popup Overlay -->
+                    <div class="popup-overlay absolute inset-0 bg-black/90 opacity-0 pointer-events-none flex items-center justify-center transition-all duration-300 backdrop-blur-sm z-20 rounded-[2rem]">
+                        <h2 class="text-3xl md:text-5xl font-bold font-serif italic text-white transform scale-95 transition-transform duration-300 text-center px-4">Please visit our stand!</h2>
+                    </div>
+                </div>
+
+                <div class="group relative bg-[#111] hover:bg-white rounded-[2rem] p-6 transition-all duration-700 cursor-pointer flex flex-col h-full overflow-hidden min-h-[400px]" onclick="togglePopup(this)">
+                    <div class="w-full max-h-[250px] md:max-h-[300px] group-hover:max-h-[1200px] transition-[max-height] duration-[1200ms] ease-in-out rounded-2xl overflow-hidden mb-6 bg-black flex items-center justify-center">
+                        <img src="gate dewata.jpeg" alt="Digital Art" class="w-full h-auto flex-shrink-0 object-cover transform group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://images.unsplash.com/photo-1518599904199-0ca897819ddb?w=800&q=80'">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-end">
+                       <div class="flex justify-between items-end text-white group-hover:text-black transition-colors duration-500">
+                           <div>
+                               <span class="text-xs tracking-widest uppercase text-gray-500 mb-1 block">Digital Art</span>
+                               <h3 class="text-2xl font-bold font-serif italic">Bali Harmony Illustration.</h3>
+                           </div>
+                           <div class="w-10 h-10 rounded-full border border-current flex items-center justify-center transition-transform group-hover:translate-x-1">
+                               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="popup-overlay absolute inset-0 bg-black/90 opacity-0 pointer-events-none flex items-center justify-center transition-all duration-300 backdrop-blur-sm z-20 rounded-[2rem]">
+                        <h2 class="text-3xl md:text-5xl font-bold font-serif italic text-white transform scale-95 transition-transform duration-300 text-center px-4">Please visit our stand!</h2>
+                    </div>
+                </div>
+
+                <div class="group relative bg-[#111] hover:bg-white rounded-[2rem] p-6 transition-all duration-700 cursor-pointer flex flex-col h-full overflow-hidden min-h-[400px]" onclick="togglePopup(this)">
+                    <div class="w-full max-h-[250px] md:max-h-[300px] group-hover:max-h-[1200px] transition-[max-height] duration-[1200ms] ease-in-out rounded-2xl overflow-hidden mb-6 bg-black flex items-center justify-center">
+                        <img src="minuman.jpeg" alt="Drink" class="w-full h-auto flex-shrink-0 object-cover transform group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=800&q=80'">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-end">
+                       <div class="flex justify-between items-end text-white group-hover:text-black transition-colors duration-500">
+                           <div>
+                               <span class="text-xs tracking-widest uppercase text-gray-500 mb-1 block">Fresh Culinary</span>
+                               <h3 class="text-2xl font-bold font-serif italic">Premium Balinese Kuwut Ice.</h3>
+                           </div>
+                           <div class="w-10 h-10 rounded-full border border-current flex items-center justify-center transition-transform group-hover:translate-x-1">
+                               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="popup-overlay absolute inset-0 bg-black/90 opacity-0 pointer-events-none flex items-center justify-center transition-all duration-300 backdrop-blur-sm z-20 rounded-[2rem]">
+                        <h2 class="text-3xl md:text-5xl font-bold font-serif italic text-white transform scale-95 transition-transform duration-300 text-center px-4">Please visit our stand!</h2>
+                    </div>
+                </div>
+
+                <div class="group relative bg-[#111] hover:bg-white rounded-[2rem] p-6 transition-all duration-700 cursor-pointer flex flex-col h-full overflow-hidden min-h-[400px]" onclick="togglePopup(this)">
+                    <div class="w-full max-h-[250px] md:max-h-[300px] group-hover:max-h-[1200px] transition-[max-height] duration-[1200ms] ease-in-out rounded-2xl overflow-hidden mb-6 bg-black flex items-center justify-center">
+                        <img src="coklat.jpeg" alt="Chocolate" class="w-full h-auto flex-shrink-0 object-cover transform group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://images.unsplash.com/photo-1548883354-94bcfe321cbb?w=800&q=80'">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-end">
+                       <div class="flex justify-between items-end text-white group-hover:text-black transition-colors duration-500">
+                           <div>
+                               <span class="text-xs tracking-widest uppercase text-gray-500 mb-1 block">Sweet Souvenir</span>
+                               <h3 class="text-2xl font-bold font-serif italic">Dewata Truffle Chocolate.</h3>
+                           </div>
+                           <div class="w-10 h-10 rounded-full border border-current flex items-center justify-center transition-transform group-hover:translate-x-1">
+                               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="popup-overlay absolute inset-0 bg-black/90 opacity-0 pointer-events-none flex items-center justify-center transition-all duration-300 backdrop-blur-sm z-20 rounded-[2rem]">
+                        <h2 class="text-3xl md:text-5xl font-bold font-serif italic text-white transform scale-95 transition-transform duration-300 text-center px-4">Please visit our stand!</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Mini Game Section -->
+    <section id="game" class="bg-[#050505] py-32 px-6 md:px-12 border-t border-white/5 relative flex flex-col items-center">
+        <div class="text-center mb-12 max-w-2xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 font-serif italic text-white">Interactive Knowledge.</h2>
+            <p class="text-white/50 tracking-wide text-lg">Navigate the maze, evade the spirits, and collect scrolls to test your Balinese history knowledge.</p>
+        </div>
+
+        <div class="relative w-full max-w-[450px] aspect-square rounded-xl overflow-hidden bg-[#111] border border-white/10 shadow-2xl" id="game-container">
+            <!-- Game Canvas -->
+            <canvas id="gameCanvas" width="450" height="450" class="block w-full h-full bg-[#0a0a0a]"></canvas>
+
+            <!-- Start Overlay -->
+            <div id="start-overlay" class="absolute inset-0 bg-black/80 flex flex-col items-center justify-center z-10 backdrop-blur-sm transition-opacity duration-300">
+                <h3 class="text-2xl font-serif italic text-white mb-4">The Culture Maze</h3>
+                <p class="text-white/70 mb-8 text-center px-8 text-sm leading-relaxed">Use <strong class="text-white">Arrow Keys</strong> to move.<br>Collect all 5 hidden scrolls and answer the historical questions. Avoid the wandering spirits!</p>
+                <button id="start-btn" class="bg-white text-black px-10 py-4 uppercase tracking-widest text-xs font-bold hover:bg-gray-200 transition-all rounded-full shadow-lg hover:scale-105">Start Game</button>
+            </div>
+
+            <!-- Question Overlay -->
+            <div id="question-overlay" class="absolute inset-0 bg-black/95 flex flex-col items-center justify-center z-20 px-6 text-center transition-all duration-500 opacity-0 pointer-events-none backdrop-blur-md">
+                <div class="w-full max-w-sm transform scale-95 transition-transform duration-500" id="question-content">
+                    <h3 class="text-white/50 text-[10px] font-bold tracking-[0.3em] uppercase mb-4" id="q-number">Scroll 1 / 5</h3>
+                    <p class="text-white text-xl font-serif italic mb-10 leading-relaxed" id="q-text">Question text here?</p>
+                    <div class="w-full flex flex-col gap-3" id="q-options">
+                        <!-- Buttons injected via JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- End Screen Overlay -->
+            <div id="end-overlay" class="absolute inset-0 bg-black flex flex-col items-center justify-center z-30 transition-all duration-700 opacity-0 pointer-events-none">
+                <h2 class="text-5xl font-serif italic text-white mb-4 scale-90 transition-transform duration-700" id="end-title">Journey Completed.</h2>
+                <p class="text-white/50 tracking-widest uppercase text-xs mb-4">Total Score</p>
+                <div class="text-7xl font-bold text-white mb-10 drop-shadow-lg" id="final-score">0</div>
+                <button onclick="location.reload()" class="border border-white/30 text-white px-8 py-3 uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all rounded-full">Play Again</button>
+            </div>
+        </div>
+        
+        <div class="mt-8 flex justify-between w-full max-w-[450px] px-2 text-xs font-bold tracking-widest uppercase text-white/40">
+            <span>Score: <span id="hud-score" class="text-white">0</span></span>
+            <span>Scrolls: <span id="hud-scrolls" class="text-white">0</span>/5</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#050505] pt-24 pb-12 px-6 md:px-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-16">
+            <div class="max-w-sm">
+                <h4 class="text-2xl font-serif italic mb-6">Charm of Bali</h4>
+                <p class="text-white/40 text-sm leading-relaxed">
+                    This website is a tribute to honor the extraordinary cultural wealth of Bali Island. Visual study and research-based interactive works.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-[10px] font-bold tracking-[0.2em] uppercase text-white/30 mb-8">Research & Creative Team</h4>
+                <ul class="text-xl font-serif italic space-y-2">
+                    <li>Raid</li>
+                    <li>Tariq</li>
+                    <li>Aryan</li>
+                    <li>Abyaz</li>
+                    <li>Bless</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-[10px] font-bold tracking-[0.2em] uppercase text-white/30 mb-8">Selected Navigation</h4>
+                <ul class="text-[10px] font-bold tracking-[0.2em] uppercase space-y-4">
+                    <li><a href="#home" class="hover:text-white/50">Home</a></li>
+                    <li><a href="#history" class="hover:text-white/50">History & Culture</a></li>
+                    <li><a href="#destinations" class="hover:text-white/50">Selected Destinations</a></li>
+                    <li><a href="#products" class="hover:text-white/50">Exclusive Artworks</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto mt-24 pt-12 border-t border-white/5 text-center">
+            <p class="text-[8px] tracking-[0.5em] text-white/20 uppercase font-bold">&copy; 2026 BALI PROJECT - ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar Scrolled Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('bg-blur', 'bg-black/80', 'py-4', 'border-b', 'border-white/5');
+                navbar.classList.remove('py-6');
+            } else {
+                navbar.classList.remove('bg-blur', 'bg-black/80', 'py-4', 'border-b', 'border-white/5');
+                navbar.classList.add('py-6');
+            }
+        });
+
+        // Toggle Popup "Kunjungi Stand" pada Produk
+        function togglePopup(element) {
+            const popup = element.querySelector('.popup-overlay');
+            const text = element.querySelector('.popup-overlay h2');
+            
+            if (popup.classList.contains('opacity-0')) {
+                popup.classList.remove('opacity-0', 'pointer-events-none');
+                popup.classList.add('opacity-100');
+                text.classList.remove('scale-95');
+                text.classList.add('scale-100');
+                
+                setTimeout(() => {
+                    popup.classList.add('opacity-0', 'pointer-events-none');
+                    popup.classList.remove('opacity-100');
+                    text.classList.add('scale-95');
+                    text.classList.remove('scale-100');
+                }, 2500);
+            }
+        }
+
+        /* --- MINI GAME LOGIC (PAC-MAN STYLE) --- */
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        const startOverlay = document.getElementById('start-overlay');
+        const questionOverlay = document.getElementById('question-overlay');
+        const endOverlay = document.getElementById('end-overlay');
+        const qContent = document.getElementById('question-content');
+        const startBtn = document.getElementById('start-btn');
+        const hudScore = document.getElementById('hud-score');
+        const hudScrolls = document.getElementById('hud-scrolls');
+        
+        const TILE_SIZE = 30;
+        let gameState = 'IDLE'; // IDLE, PLAYING, QUESTION, END
+        let score = 0;
+        let scrollsCollected = 0;
+        let currentScrollIndex = 0;
+        let animationId;
+
+        // 15x15 Maze (1=Wall, 0=Path, 2=Scroll)
+        const initialMap = [
+            [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+            [1,0,0,0,0,0,1,0,0,0,0,0,0,0,1],
+            [1,0,1,1,1,0,1,0,1,1,1,1,1,0,1],
+            [1,0,1,0,0,0,0,0,0,0,0,0,1,0,1],
+            [1,0,1,0,1,1,1,0,1,1,1,0,1,0,1],
+            [1,0,0,0,1,0,0,0,0,0,1,0,0,0,1],
+            [1,1,1,0,1,0,1,1,1,0,1,0,1,1,1],
+            [1,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+            [1,1,1,0,1,0,1,1,1,0,1,0,1,1,1],
+            [1,0,0,0,1,0,0,0,0,0,1,0,0,0,1],
+            [1,0,1,0,1,1,1,0,1,1,1,0,1,0,1],
+            [1,0,1,0,0,0,0,0,0,0,0,0,1,0,1],
+            [1,0,1,1,1,0,1,0,1,1,1,1,1,0,1],
+            [1,0,0,0,0,0,1,0,0,0,0,0,0,0,1],
+            [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+        ];
+        let map = JSON.parse(JSON.stringify(initialMap));
+
+        // Questions based on History Section
+        const questionsData = [
+            { q: "What is the name of the first written inscription found in Bali (914 AD)?", options: ["Tarumanegara", "Blanjong", "Kutai", "Majapahit"], answer: 1 },
+            { q: "Who led the Majapahit expedition to conquer Bali in 1343?", options: ["Hayam Wuruk", "Ken Arok", "Raden Wijaya", "Gajah Mada"], answer: 3 },
+            { q: "What is the Balinese irrigation system based on Tri Hita Karana called?", options: ["Subak", "Banjar", "Pura", "Kasta"], answer: 0 },
+            { q: "What local social concept upholds universal tolerance in Bali?", options: ["Catur Varna", "Agama Tirtha", "Menyama Braya", "Tri Hita Karana"], answer: 2 },
+            { q: "Which religious sect emerged from the syncretism of Siwa-Buddha and local animism?", options: ["Kejawen", "Hindu Dharma", "Agama Tirtha", "Buddhism"], answer: 2 }
+        ];
+
+        // Place 5 scrolls randomly on path
+        function placeScrolls() {
+            let placed = 0;
+            while(placed < 5) {
+                let r = Math.floor(Math.random() * 15);
+                let c = Math.floor(Math.random() * 15);
+                // Don't place on spawn point (1,1) or walls
+                if(map[r][c] === 0 && (r !== 1 || c !== 1)) {
+                    map[r][c] = 2;
+                    placed++;
+                }
+            }
+        }
+        placeScrolls();
+
+        // Entities
+        let player = { x: 1 * TILE_SIZE, y: 1 * TILE_SIZE, dirX: 0, dirY: 0, nextDirX: 0, nextDirY: 0, speed: 2 };
+        let ghosts = [
+            { x: 13 * TILE_SIZE, y: 1 * TILE_SIZE, dirX: -1, dirY: 0, color: '#ff3366' },
+            { x: 1 * TILE_SIZE, y: 13 * TILE_SIZE, dirX: 1, dirY: 0, color: '#33ccff' },
+            { x: 13 * TILE_SIZE, y: 13 * TILE_SIZE, dirX: 0, dirY: -1, color: '#ff9933' }
+        ];
+
+        // Prevent window scrolling when playing and using arrows
+        window.addEventListener("keydown", function(e) {
+            if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+                if(gameState === 'PLAYING') {
+                    e.preventDefault();
+                }
+            }
+            if (e.code === "ArrowUp") { player.nextDirX = 0; player.nextDirY = -1; }
+            if (e.code === "ArrowDown") { player.nextDirX = 0; player.nextDirY = 1; }
+            if (e.code === "ArrowLeft") { player.nextDirX = -1; player.nextDirY = 0; }
+            if (e.code === "ArrowRight") { player.nextDirX = 1; player.nextDirY = 0; }
+        }, false);
+
+        startBtn.addEventListener('click', () => {
+            startOverlay.classList.add('opacity-0', 'pointer-events-none');
+            gameState = 'PLAYING';
+            // Scroll to game securely
+            document.getElementById('game').scrollIntoView({behavior: 'smooth'});
+            gameLoop();
+        });
+
+        function getPossibleGhostMoves(g, gridX, gridY) {
+            let moves = [];
+            const dirs = [{x:0, y:-1}, {x:0, y:1}, {x:-1, y:0}, {x:1, y:0}];
+            for(let d of dirs) {
+                if(map[gridY + d.y][gridX + d.x] !== 1) {
+                    if(d.x !== -g.dirX || d.y !== -g.dirY) { // Prevent U-Turn
+                        moves.push(d);
+                    }
+                }
+            }
+            if(moves.length === 0) moves.push({x: -g.dirX, y: -g.dirY}); // U-Turn if trapped
+            return moves;
+        }
+
+        function triggerQuestion() {
+            gameState = 'QUESTION';
+            let qData = questionsData[currentScrollIndex];
+            
+            document.getElementById('q-number').innerText = `Scroll ${currentScrollIndex + 1} / 5`;
+            document.getElementById('q-text').innerText = qData.q;
+            
+            let optionsHtml = '';
+            qData.options.forEach((opt, idx) => {
+                optionsHtml += `<button onclick="answerQuestion(${idx}, ${qData.answer})" class="w-full text-left px-6 py-4 bg-white/5 border border-white/10 hover:bg-white hover:text-black transition-all rounded-lg text-sm font-medium text-white/90 focus:outline-none">${opt}</button>`;
+            });
+            document.getElementById('q-options').innerHTML = optionsHtml;
+            
+            questionOverlay.classList.remove('opacity-0', 'pointer-events-none');
+            setTimeout(() => { qContent.classList.remove('scale-95'); qContent.classList.add('scale-100'); }, 50);
+        }
+
+        window.answerQuestion = function(selectedIdx, correctIdx) {
+            if(selectedIdx === correctIdx) {
+                score += 100;
+                hudScore.innerText = score;
+            }
+            scrollsCollected++;
+            hudScrolls.innerText = scrollsCollected;
+            currentScrollIndex++;
+            
+            qContent.classList.remove('scale-100'); qContent.classList.add('scale-95');
+            questionOverlay.classList.add('opacity-0', 'pointer-events-none');
+            
+            if(scrollsCollected >= 5) {
+                setTimeout(() => {
+                    gameState = 'END';
+                    document.getElementById('final-score').innerText = score;
+                    endOverlay.classList.remove('opacity-0', 'pointer-events-none');
+                    document.getElementById('end-title').classList.remove('scale-90');
+                }, 400);
+            } else {
+                setTimeout(() => { gameState = 'PLAYING'; }, 300);
+            }
+        };
+
+        function drawMap() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for(let r=0; r<15; r++) {
+                for(let c=0; c<15; c++) {
+                    if(map[r][c] === 1) {
+                        ctx.fillStyle = '#1a1a1a';
+                        ctx.fillRect(c*TILE_SIZE, r*TILE_SIZE, TILE_SIZE, TILE_SIZE);
+                        ctx.strokeStyle = '#333';
+                        ctx.strokeRect(c*TILE_SIZE, r*TILE_SIZE, TILE_SIZE, TILE_SIZE);
+                    } else if(map[r][c] === 2) {
+                        // Draw scroll (paper)
+                        let px = c*TILE_SIZE + TILE_SIZE/2;
+                        let py = r*TILE_SIZE + TILE_SIZE/2;
+                        ctx.fillStyle = '#f0f0f0';
+                        ctx.fillRect(px - 6, py - 8, 12, 16);
+                        ctx.fillStyle = '#cc0000';
+                        ctx.fillRect(px - 4, py - 3, 8, 3);
+                    }
+                }
+            }
+        }
+
+        function drawPlayer() {
+            let px = player.x + TILE_SIZE/2;
+            let py = player.y + TILE_SIZE/2;
+            ctx.fillStyle = '#ffcc00';
+            ctx.beginPath();
+            let mouth = (Date.now() % 400 > 200 && (player.dirX !== 0 || player.dirY !== 0)) ? 0.2 : 0;
+            
+            let angle = 0;
+            if(player.dirX === 1) angle = 0;
+            else if(player.dirX === -1) angle = Math.PI;
+            else if(player.dirY === 1) angle = Math.PI/2;
+            else if(player.dirY === -1) angle = -Math.PI/2;
+            else if(player.nextDirX === -1) angle = Math.PI; // default look
+
+            ctx.save();
+            ctx.translate(px, py);
+            ctx.rotate(angle);
+            ctx.arc(0, 0, 11, mouth * Math.PI, (2 - mouth) * Math.PI);
+            ctx.lineTo(0, 0);
+            ctx.fill();
+            ctx.restore();
+        }
+
+        function drawGhosts() {
+            ghosts.forEach(g => {
+                let gx = g.x + TILE_SIZE/2;
+                let gy = g.y + TILE_SIZE/2;
+                ctx.fillStyle = g.color;
+                ctx.beginPath();
+                ctx.arc(gx, gy - 2, 10, Math.PI, 0);
+                ctx.lineTo(gx + 10, gy + 10);
+                ctx.lineTo(gx + 5, gy + 7);
+                ctx.lineTo(gx, gy + 10);
+                ctx.lineTo(gx - 5, gy + 7);
+                ctx.lineTo(gx - 10, gy + 10);
+                ctx.fill();
+                
+                // Eyes
+                ctx.fillStyle = 'white';
+                ctx.beginPath(); ctx.arc(gx - 4, gy - 4, 3, 0, Math.PI*2); ctx.fill();
+                ctx.beginPath(); ctx.arc(gx + 4, gy - 4, 3, 0, Math.PI*2); ctx.fill();
+                ctx.fillStyle = 'blue';
+                ctx.beginPath(); ctx.arc(gx - 4 + g.dirX, gy - 4 + g.dirY, 1.5, 0, Math.PI*2); ctx.fill();
+                ctx.beginPath(); ctx.arc(gx + 4 + g.dirX, gy - 4 + g.dirY, 1.5, 0, Math.PI*2); ctx.fill();
+            });
+        }
+
+        function update() {
+            if(gameState !== 'PLAYING') return;
+
+            // Player logic
+            if(player.x % TILE_SIZE === 0 && player.y % TILE_SIZE === 0) {
+                let gridX = player.x / TILE_SIZE;
+                let gridY = player.y / TILE_SIZE;
+
+                // Check scroll collision
+                if(map[gridY][gridX] === 2) {
+                    map[gridY][gridX] = 0; // Remove scroll
+                    triggerQuestion();
+                    return; // Pause logic for this frame
+                }
+
+                // Change direction if possible
+                if(player.nextDirX !== 0 || player.nextDirY !== 0) {
+                    if(map[gridY + player.nextDirY][gridX + player.nextDirX] !== 1) {
+                        player.dirX = player.nextDirX;
+                        player.dirY = player.nextDirY;
+                    }
+                }
+                // Stop if wall ahead
+                if(map[gridY + player.dirY][gridX + player.dirX] === 1) {
+                    player.dirX = 0;
+                    player.dirY = 0;
+                }
+            }
+            player.x += player.dirX * player.speed;
+            player.y += player.dirY * player.speed;
+
+            // Ghost logic
+            ghosts.forEach(g => {
+                if(g.x % TILE_SIZE === 0 && g.y % TILE_SIZE === 0) {
+                    let gridX = g.x / TILE_SIZE;
+                    let gridY = g.y / TILE_SIZE;
+                    let moves = getPossibleGhostMoves(g, gridX, gridY);
+                    if(moves.length > 0) {
+                        let move = moves[Math.floor(Math.random() * moves.length)];
+                        g.dirX = move.x;
+                        g.dirY = move.y;
+                    } else {
+                        g.dirX = 0; g.dirY = 0;
+                    }
+                }
+                g.x += g.dirX * 1.5; // Ghosts are slightly slower than player
+                g.y += g.dirY * 1.5;
+
+                // Collision Detection with Player
+                let dist = Math.hypot(player.x - g.x, player.y - g.y);
+                if(dist < TILE_SIZE * 0.7) {
+                    gameState = 'IDLE';
+                    setTimeout(() => {
+                        alert("You lose, please try again!");
+                        window.location.reload();
+                    }, 50);
+                }
+            });
+        }
+
+        function gameLoop() {
+            update();
+            drawMap();
+            drawPlayer();
+            drawGhosts();
+            if(gameState !== 'END') {
+                animationId = requestAnimationFrame(gameLoop);
+            } else {
+                // Final render
+                drawMap(); drawPlayer(); drawGhosts();
+            }
+        }
+
+        // Initial draw for background before start
+        drawMap();
+        drawPlayer();
+        drawGhosts();
+
+    </script>
+</body>
+</html>
